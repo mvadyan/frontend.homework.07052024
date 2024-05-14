@@ -1,0 +1,116 @@
+/*обнуление стилей*/
+/*box sizing*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*меняем алгоритм рощера высоты и ширины*/
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 2px solid;
+    /* background-color: aqua;*/
+    height: 120px;
+
+    .navi {
+        margin-bottom: 3px;
+
+        li {
+            display: inline-block;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.279);
+            padding: 14px 16px;
+
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                color: antiquewhite;
+            }
+        }
+    }
+}
+
+.main {
+    border: 2px solid;
+    /* background-color: rgb(89, 0, 255);*/
+    flex: 1;
+
+    .product {
+        width: 180px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.279);
+        margin: 10px;
+        padding: 5px;
+
+        .product-list {
+            margin-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-family: 'Open Sans', serif;
+
+            h3 {
+                color: antiquewhite;
+                font-family: 'Open Sans', serif;
+            }
+
+            h2 {
+                color: rgb(144, 80, 125);
+                font-family: 'Open Sans', serif;
+            }
+        }
+
+    }
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 2px solid;
+    /*background-color: rgb(255, 0, 72);*/
+    height: 120px;
+
+    .social {
+        display: flex;
+        justify-content: center;
+
+        a {
+            padding: 5px;
+            text-decoration: none;
+
+            img {
+                width: 35px;
+            }
+        }
+    }
+}
+
+
+.background-header{
+    background-color: rgb(217, 226, 235);
+}
+
+.background-main{
+    background-color: rgb(215, 240, 241);
+}
+
+.background-footer{
+    background-color: rgb(144, 165, 183);
+}
